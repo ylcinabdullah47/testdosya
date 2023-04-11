@@ -2,9 +2,11 @@ console.log("test api 1");
 const express = require('express');
 // const dataBase = require('./mongodb')
 const Form = require('./mongodb');
+const path = require('path');
 const app = express();
 app.use(express.json());
-
+app.use(express.static(path.join(__dirname,'public')))
+app.use(express.urlencoded({extended:true}))
 // let ilanlar = [
 //   { id: '1', title: 'İş arıyorum', description: 'Tecrübeli bir yazılım geliştiriciyim.' },
 //   { id: '2', title: 'Satılık daire', description: 'Merkezi konumda, geniş ve ferah bir daire.' },
