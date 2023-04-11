@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ekle html sayfası</title>
+</head>
+<body>
+    <h1>İlan Ekle</h1>
+    <form action="/ilanlar" method="POST">
+      <label for="baslik">Başlık:</label>
+      <input type="text" id="baslik" name="baslik"><br><br>
+      <label for="aciklama">Açıklama:</label>
+      <textarea id="aciklama" name="aciklama"></textarea><br><br>
+      <label for="fiyat">Fiyat:</label>
+      <input type="number" id="fiyat" name="fiyat"><br><br>
+      <input type="submit" value="Gönder">
+    </form>
+</body>
+</html>
